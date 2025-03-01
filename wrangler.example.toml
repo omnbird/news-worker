@@ -1,0 +1,20 @@
+name = "news-worker"
+main = "src/index.ts"
+compatibility_date = "2025-01-21"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "news"
+database_id = "your-database-id"  # replace with your Cloudflare D1 database ID
+
+[[kv_namespaces]]
+binding = "NEWS_WORDCLOUD"
+id = "your-kv-id"  # replace with your Cloudflare KV ID
+
+[triggers]
+crons = [
+  "0 9 * * *",
+  "0 14 * * *",
+  "0 20 * * *"
+] 

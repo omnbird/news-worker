@@ -1,0 +1,17 @@
+{
+  "name": "trump-musk-news-worker",
+  "scripts": {
+    "dev": "wrangler dev",
+    "cf-deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "hono": "^4.6.20"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@cloudflare/workerd-darwin-arm64": "^1.20250121.0",
+    "@cloudflare/workers-types": "^4.20250204.0",
+    "wrangler": "^3.107.3"
+  }
+}
