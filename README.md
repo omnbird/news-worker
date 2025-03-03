@@ -78,7 +78,7 @@ pnpm dev
 
 1. Deploy the Worker:
 ```bash
-pnpm cfdeploy
+pnpm cf-deploy
 ```
 
 2. Set environment variables:
